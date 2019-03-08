@@ -56,6 +56,14 @@
             isVisible = true;
         }
     }
+
+    //定时器 异步运行
+    function hello(){
+        trafficLayer.reload()
+        console.log("重新加载图层")
+    }
+    //使用方法名字执行方法
+    var t1 = setInterval(hello,10000);
 </script>
 </body>
 </html>
